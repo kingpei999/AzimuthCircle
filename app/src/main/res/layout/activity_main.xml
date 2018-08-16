@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.kingpei.customview.AzimuthCircle
+        android:id="@+id/azimuth_circle"
+        android:layout_width="148dp"
+        android:layout_height="148dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:circleColor="@color/circleColor"
+        android:onClick="circlePressed"
+        app:drawBottom="@drawable/icon_arrow_down_orange"
+        app:drawLeft="@drawable/icon_arrow_left_orange"
+        app:drawRight="@drawable/icon_arrow_right_orange"
+        app:drawTop="@drawable/icon_arrow_up_orange"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shadowColor="@color/shadowColor">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/ok_tv"
+            android:layout_width="66dp"
+            android:layout_height="66dp"
+            android:background="@drawable/shape_shadow_circle_button_orange"
+            android:elevation="1dp"
+            android:gravity="center"
+            android:text="OK"
+            android:onClick="okClick"
+            app:textAllCaps="true" />
+
+    </com.kingpei.customview.AzimuthCircle>
+
+</android.support.constraint.ConstraintLayout>
